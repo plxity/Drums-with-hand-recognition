@@ -1,0 +1,41 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+canvas {
+  width: 1100px;
+  transform: scaleX(-1);
+  height: 700px;
+}
+.drumpad {
+  position: absolute;
+  top: 400px;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  width: 1100px;
+}
+.drum {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 3px solid blue;
+  border-radius: 4px;
+  top: 400px;
+}
+.drum1 {
+  border: 5px solid blue;
+}
+
+.drum2 {
+  border: 5px solid green;
+}
+
+.drum3 {
+  border: 5px solid yellow;
+}
+
+.drum4 {
+  border: 5px solid red;
+}

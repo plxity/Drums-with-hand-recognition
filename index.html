@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="./index.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <video class="input_video" style="display: none"></video>
+      <canvas class="output_canvas" style="transform: scaleX(-1)"> </canvas>
+      <div class="drumpad">
+        <div class="drum drum1"></div>
+        <div class="drum drum2"></div>
+        <div class="drum drum3"></div>
+        <div class="drum drum4"></div>
+      </div>
+      <audio data-key="1" src="sounds/clap1.wav"></audio>
+      <audio data-key="2" src="sounds/kick.wav"></audio>
+      <audio data-key="3" src="sounds/hihat.wav"></audio>
+      <audio data-key="4" src="sounds/boom.wav"></audio>
+      <audio data-key="5" src="sounds/ride.wav"></audio>
+    </div>
+  </body>
+  <script type="module" src="'./index.js"></script>
+</html>
